@@ -1,4 +1,11 @@
-<app-navbar></app-navbar>
-<app-sidebar></app-sidebar>
+<app-navbar id="navbar" class="navbar navbar-dark bg-dark fixed-top"></app-navbar>
 
-<h1>My dashboard</h1>
+<div class="container-fluid">
+  <div id="main-content" class="row">
+    <app-sidebar id="sidebar" class="col-sm-3 col-md-2 d-none d-sm-block sidebar"></app-sidebar>
+    
+    <div id="dashboard" class="col-sm-9">
+    
+    </div>
+  </div>  
+</div>
