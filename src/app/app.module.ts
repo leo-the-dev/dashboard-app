@@ -7,6 +7,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SalesComponent } from './sales/sales.component';
 import { OrdersComponent } from './orders/orders.component';
 import { HealthComponent } from './health/health.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -15,11 +19,15 @@ import { HealthComponent } from './health/health.component';
     SidebarComponent,
     SalesComponent,
     OrdersComponent,
-    HealthComponent
+    HealthComponent,
+    BarChartComponent,
+    LineChartComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
